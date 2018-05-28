@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contate-nos | NeoSakura</title>
+
+	<link rel="stylesheet" href="_css/estilos.css" />
+	<link rel="stylesheet" href="_css/w3.css">
+	<link type="text/css" rel="stylesheet" href="_css/form.css" />
+	<link type="text/css" rel="stylesheet" href="_css/jquery-ui.min.css" />
+
+	<link rel="shortcut icon" href="_img/favicon.ico" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			var availableTags = [
+				"Quixadá",
+				"Fortaleza",
+				"Banabuiu",
+				"Madalena",
+				"Iguatu",
+				"Boa Viagem",
+				"Canindé",
+				"Quixeramobim",
+				"Morada Nova",
+				"Morumbi",
+				"Cascavel",
+				"Amapa",
+				"São Paulo",
+				"Rio de Janeiro",
+				"Terezina",
+				"Salvador",
+				"Goiania",
+				"Curitiba",
+				"Maracanau",
+				"Uruque",
+				"Redenção",
+				"Ocara"
+			];
+			$("#tags").autocomplete({
+				source: availableTags
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="w3-center">
+		<img src="_img/logo03.png" />
+		<br>
+
+		<header id="cabecalho">
+			<nav id="menu">
+				<h1>Menu Principal</h1>
+				<ul type="disc">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="books.html">Livros</a>
+					</li>
+					<li>
+						<a href="accessories.html">Acessórios</a>
+					</li>
+					<li>
+						<a href="bedroom.html">Quarto</a>
+					</li>
+					<li>
+						<a href="used.html">Usados</a>
+					</li>
+					<li>
+						<a href="contact_us.html">Contate-nos</a>
+					</li>
+					<li>
+						<a href="help.html">Sobre</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="conteiner">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div>
+			<p class="titulo">
+				<font size=32 face="Base">
+					Escreva-nos!
+				</font>
+			</p>
+		</div>
+
+		<br>
+		<br>
+
+		<form action="#" , method="POST">
+			<fieldset>
+				<fieldset class="grupo">
+					<div class="campo">
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome">
+					</div>
+					<div class="campo">
+						<label for="snome">Sobrenome</label>
+						<input type="text" name="snome" id="snome">
+					</div>
+				</fieldset>
+
+				<div class="campo">
+					<label>Sexo</label>
+
+					<label class="checkbox">
+						<input type="radio" name="sexo" value="Masculino">Masculino
+					</label>
+					<label class="checkbox">
+						<input type="radio" name="sexo" value="Feminino">Feminino
+					</label>
+				</div>
+
+				<div class="campo">
+					<label for="email">E-mail</label>
+					<input type="text" name="email" id="email" style="width: 20em" value="">
+				</div>
+				<div class="campo">
+					<label for="telefone">Telefone</label>
+					<input type="text" name="telefone" id="telefone" style="width: 10em" value="">
+				</div>
+
+				<fieldset class="grupo">
+					<div class="ui-widget">
+						<div class="campo">
+							<label for="tags">Cidade</label>
+							<input type="text" name="cidade" id="tags" style="width: 10em" value="">
+						</div>
+					</div>
+					<div class="campo">
+						<label for="estado">Estado</label>
+						<select name="estado" id="estado">
+							<option value="">--</option>
+							<option value="AC">AC</option>
+							<option value="AL">AL</option>
+							<option value="AM">AM</option>
+							<option value="AP">AP</option>
+							<option value="BA">BA</option>
+							<option value="CE">CE</option>
+							<option value="DF">DF</option>
+							<option value="ES">ES</option>
+							<option value="GO">GO</option>
+							<option value="MA">MA</option>
+							<option value="MG">MG</option>
+							<option value="MS">MS</option>
+							<option value="MT">MT</option>
+							<option value="PA">PA</option>
+							<option value="PB">PB</option>
+							<option value="PE">PE</option>
+							<option value="PI">PI</option>
+							<option value="PR">PR</option>
+							<option value="RJ">RJ</option>
+							<option value="RN">RN</option>
+							<option value="RO">RO</option>
+							<option value="RR">RR</option>
+							<option value="RS">RS</option>
+							<option value="SC">SC</option>
+							<option value="SE">SE</option>
+							<option value="SP">SP</option>
+							<option value="TO">TO</option>
+						</select>
+					</div>
+				</fieldset>
+
+				<div class="campo">
+					<label for="mensagem">Mensagem</label>
+					<textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+				</div>
+				<div class="campo">
+					<label>Newsletter</label>
+					<label>
+						<input type="checkbox" name="newsletter" value="1">Gostaria de receber a Newsletter da empresa
+					</label>
+				</div>
+
+				<button type="submit" class="botao submit">Enviar</button>
+
+			</fieldset>
+		</form>
+
+		<br>
+		<br>
+		<br>
+		<div>
+			<p>Copyright&copy; reserved by NeoSakura - Fone: (88) 994960554</p>
+			<p>2017 - 2018</p>
+			<p>Developed by Luis Henrique de Pinho Junior</p>
+		</div>
+	</div>
+</body>
+<script>$("#telefone").mask("(00) 0000-00009");</script>
+
+</html>
